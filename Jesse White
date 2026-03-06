@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Template for colorful webpages</title>
+  <title>Jae White - Portfolio & Resume</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     :root {
@@ -23,8 +23,9 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       animation: bgFade 4s ease-in-out alternate infinite;
+      padding-bottom: 60px;
     }
     @keyframes bgFade {
       0% { background: var(--main-bg); }
@@ -38,6 +39,13 @@
       text-align: center;
       animation: fadeInDown 1.2s cubic-bezier(.68,-0.55,.27,1.55);
     }
+    h2 {
+      margin-top: 32px;
+      color: #2670a8;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+      text-align: center;
+    }
     @keyframes fadeInDown {
       0% { opacity: 0; transform: translateY(-40px);}
       100% { opacity: 1; transform: translateY(0);}
@@ -46,10 +54,10 @@
       background: var(--table-bg);
       box-shadow: var(--shadow);
       border-radius: var(--border-radius);
-      padding: 32px 32px 24px 32px;
+      padding: 32px;
       margin: 32px 0;
       min-width: 320px;
-      max-width: 650px;
+      max-width: 800px;
       width: 90vw;
       animation: popIn .8s cubic-bezier(.68,-0.55,.27,1.55);
     }
@@ -62,7 +70,7 @@
       border-spacing: 0;
       width: 100%;
       background: transparent;
-      font-size: 1.08rem;
+      font-size: 1.05rem;
       border-radius: var(--border-radius);
       overflow: hidden;
       box-shadow: 0 0 0 1.5px #e0e0e0;
@@ -115,56 +123,74 @@
       0% { box-shadow: 0 0 0 0 #38b6ff33;}
       100% { box-shadow: 0 0 16px 4px #38b6ff22;}
     }
+    /* Links inside table */
+    td a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    td a:hover {
+      text-decoration: underline;
+    }
     /* Responsive */
     @media (max-width: 600px) {
       .table-container { padding: 16px 0 8px 0; }
       th, td { padding: 10px 6px; font-size: 0.98rem; }
       h1 { font-size: 1.5rem; }
+      h2 { font-size: 1.2rem; }
     }
   </style>
 </head>
 <body>
-  <h1>Fancy Animated Table</h1>
+  <h1>Jae White - Portfolio & Resume</h1>
+
   <div class="table-container">
+    <h2>Highlighted Projects</h2>
     <table>
       <thead>
         <tr>
-          <th>Product</th>
+          <th>Project</th>
           <th>Category</th>
-          <th>In Stock</th>
-          <th>Price</th>
+          <th>Link</th>
+          <th>Tech / Skills</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Pastel Mug</td>
-          <td>Kitchenware</td>
-          <td>Yes</td>
-          <td>$12.99</td>
+          <td>Custom Gantt Chart</td>
+          <td>Salesforce</td>
+          <td><a href="https://github.com/jaewhite25/Full_Stack_Trade_company_template">View on GitHub</a></td>
+          <td>LWC, Apex, Salesforce Reports Integration</td>
         </tr>
         <tr>
-          <td>Satin Pillow</td>
-          <td>Home</td>
-          <td>No</td>
-          <td>$19.50</td>
+          <td>LWC Dynamic Report Viewer</td>
+          <td>Salesforce</td>
+          <td><a href="https://github.com/jaewhite25/AI_maker_template">View on GitHub</a></td>
+          <td>LWC, Salesforce Reports, Tabular & Summary Views</td>
         </tr>
         <tr>
-          <td>LED Light Strip</td>
-          <td>Electronics</td>
-          <td>Yes</td>
-          <td>$9.99</td>
+          <td>Responsive Recipe Page</td>
+          <td>Front-End</td>
+          <td><a href="https://github.com/jaewhite25/Front_end_recipe_page_challenge">View on GitHub</a></td>
+          <td>HTML, CSS</td>
         </tr>
         <tr>
-          <td>Succulent Plant</td>
-          <td>Decor</td>
-          <td>Yes</td>
-          <td>$7.25</td>
+          <td>Full-Stack Trade Company Template</td>
+          <td>Full-Stack</td>
+          <td><a href="https://github.com/jaewhite25/Full_Stack_Trade_company_template">View on GitHub</a></td>
+          <td>Python, C#, React, FastAPI, Docker</td>
         </tr>
         <tr>
-          <td>Bamboo Notebook</td>
-          <td>Stationery</td>
-          <td>No</td>
-          <td>$5.60</td>
+          <td>AI Maker Template</td>
+          <td>Tooling / AI</td>
+          <td><a href="https://github.com/jaewhite25/AI_maker_template">View on GitHub</a></td>
+          <td>HTML, JavaScript</td>
+        </tr>
+        <tr>
+          <td>Login Page Template</td>
+          <td>Front-End / Auth UI</td>
+          <td><a href="https://github.com/jaewhite25/Login-Page-Template-">View on GitHub</a></td>
+          <td>HTML, CSS, JavaScript</td>
         </tr>
       </tbody>
     </table>
