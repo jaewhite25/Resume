@@ -111,7 +111,6 @@
     tr:last-child td {
       border-bottom: none;
     }
-    /* Animated accent for first column */
     td:first-child {
       border-left: 4px solid var(--accent);
       background: linear-gradient(90deg, #daf6ff 0%, #fff 90%);
@@ -123,7 +122,6 @@
       0% { box-shadow: 0 0 0 0 #38b6ff33;}
       100% { box-shadow: 0 0 16px 4px #38b6ff22;}
     }
-    /* Links inside table */
     td a {
       color: var(--accent);
       text-decoration: none;
@@ -132,7 +130,6 @@
     td a:hover {
       text-decoration: underline;
     }
-    /* Responsive */
     @media (max-width: 600px) {
       .table-container { padding: 16px 0 8px 0; }
       th, td { padding: 10px 6px; font-size: 0.98rem; }
@@ -144,6 +141,7 @@
 <body>
   <h1>Jae White - Portfolio & Resume</h1>
 
+  <!-- Projects Section -->
   <div class="table-container">
     <h2>Highlighted Projects</h2>
     <table>
@@ -195,5 +193,47 @@
       </tbody>
     </table>
   </div>
+
+  <!-- Certifications Section -->
+  <div class="table-container">
+    <h2>Certifications & Honors</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Certification / Program</th>
+          <th>Category</th>
+          <th>Issuing Organization</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Python Programming</td>
+          <td>Programming</td>
+          <td>Self / Online</td>
+          <td>Certified</td>
+        </tr>
+        <tr>
+          <td>Data Analytics</td>
+          <td>Data Science</td>
+          <td>Self / Online</td>
+          <td>Certified</td>
+        </tr>
+        <tr>
+          <td>Correlation One Honors Graduate</td>
+          <td>Salesforce</td>
+          <td>Correlation One</td>
+          <td>Certified</td>
+        </tr>
+        <tr>
+          <td>Front-End Developer Bootcamp</td>
+          <td>Web Development</td>
+          <td>Springboard</td>
+          <td>Certified</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
 </body>
 </html>
